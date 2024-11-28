@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: end;
+  margin-right: 200px;
+  margin-top: 80px;
+}
+
+.addTaskButton {
+  background-color: green;
+  border: none;
+  padding: 12.5px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.board {
+  display: flex;
+  width: 280px;
+  min-width: 280px;
+  min-height: 672px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #101010;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.task {
+  display: flex;
+  width: 240px;
+  padding: 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+
+.text {
+  flex: 1;
+  opacity: 0.7;
+}
+
+.blackDot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  z-index: 1001;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit {
+  background-color: green;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+.submit:active {
+  background-color: #387c3b;
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #000;
+}
